@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<link rel="stylesheet" href="styles.css"> 
+
+	<h1 id="title">Admission Survey Form</h1>
+	<p id="description">Thank you for taking the time to fill this survey!</p>
+
+	<form id="survey-form">
+		<label id="name-label" for="name">Name</label><br>
+		<input id="name" type="text" required="" placeholder="Enter your name"><br><br>
+
+		<label id="email-label" for="email">Email</label><br>
+		<input id="email" type="email" required="" placeholder="Enter your email"><br><br>
+		
+		<label id="number-label" for="number">Age</label><br>
+		<input id="number" type="number" min="10" max="99" placeholder="Age"><br><br>
+
+		<label for="dropdown">What role would you like to apply for?</label><br>
+		<select id="dropdown">
+			<option value="Student">Student</option>
+			<option value="Volunteer">Volunteer</option>
+		</select><br><br>
+
+		<label for="Language">Choose your language:</label> <br>
+		<input type="radio" name="Language" value="Spanish">
+		<label for="Spanish">Spanish</label><br>
+		<input type="radio" name="Language" value="English">
+		<label for="English">English</label><br><br>
+		
+
+		<label>Do you have experience in any of these programming launguages? (Check all that apply)</label> <br>
+		<input type="checkbox" value="JavaScript">
+		<label for="JavaScript">JavaScript</label><br>
+		<input type="checkbox" value="CSS">
+		<label for="CSS">CSS</label><br>
+		<input type="checkbox" value="HTML">
+		<label for="HTML">HTML</label><br>
+		<input type="checkbox" value="Python">
+		<label for="Python">Python</label><br><br>
+
+
+		<label>Any comments or suggestions?</label> <br>
+		<textarea>Enter your comments here...</textarea> <br><br>
+
+		<input id="submit" type="submit">
+	</form>	
+
+</body>
+</html>
